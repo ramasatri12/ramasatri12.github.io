@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rama Satriana — Full-Stack Engineer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Rama Satriana is a Full-Stack Engineer focused on building reliable and maintainable web systems." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Space Grotesk', 'sans-serif'],
+            serif: ['Instrument Serif', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .dark .glass {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    body {
+      transition: background-color .3s ease, color .3s ease;
+    }
+    .tag {
+      @apply text-[10px] font-mono border border-zinc-200 dark:border-zinc-800 px-2 py-1 rounded;
+    }
+
+    .nav-link {
+      @apply hover:text-indigo-500 dark:hover:text-indigo-400 transition;
+    }
+
+    article {
+      @apply transition duration-300 ease-out;
+    }
+
+    article:hover {
+      transform: translateY(-4px);
+    }
+
+
+
+  </style>
+</head>
+
+<body class="bg-[#fafafa] text-zinc-900 dark:bg-[#0a0a0a] dark:text-zinc-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Theme Toggle -->
+  <div class="fixed top-6 right-6 z-50">
+    <button id="theme-toggle"
+      aria-label="Toggle theme"
+      class="p-3 rounded-full glass hover:scale-110 hover:shadow-lg transition-all duration-300">
+      <span class="text-lg">🌓</span>
+    </button>
+  </div>
+
+  <!-- NAV -->
+  <nav class="max-w-4xl mx-auto px-6 py-12 flex justify-between items-center">
+
+    <div class="text-xl font-bold tracking-tighter italic">
+      RS.
+    </div>
+
+    <div class="flex gap-4 md:gap-8 text-[11px] uppercase tracking-[0.2em] font-medium text-zinc-500">
+
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#toolkit" class="nav-link">Toolkit</a>
+      <a href="#contact" class="nav-link">Contact</a>
+
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6 pb-32">
+
+    <!-- HERO -->
+    <section class="mb-24 md:mb-32">
+
+      <h1 class="text-5xl md:text-8xl font-bold tracking-tighter leading-[0.9] mb-8">
+        Building reliable <span class="font-serif text-indigo-600 dark:text-indigo-400">full-stack systems</span><br>
+        that scale with real business needs.
+      </h1>
+
+      <p class="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl leading-relaxed">
+        I’m Rama Satriana, a full-stack engineer focused on crafting maintainable web platforms —
+        from admin workflows to performance-sensitive APIs. I enjoy turning complex requirements
+        into systems that are structured, measurable, and production-ready.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#projects"
+          class="px-6 py-3 rounded-xl bg-indigo-600 text-white text-sm font-medium hover:opacity-90 transition">
+          View Selected Work
+        </a>
+
+        <a href="mailto:ramasatriana12@gmail.com"
+          class="px-6 py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition">
+          Get in Touch
+        </a>
+      </div>
+
+    </section>
+
+    <!-- WORK -->
+    <section id="projects" class="mb-32">
+
+      <h2 class="text-[10px] font-bold tracking-[0.4em] text-zinc-400 mb-16 uppercase">
+        Selected Work
+      </h2>
+
+      <div class="space-y-32">
+
+        <!-- ===================== -->
+        <!-- PROJECT 1 — NOLKA -->
+        <!-- ===================== -->
+        <article class="group transition duration-300 hover:-translate-y-1">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+
+            <div class="w-full md:w-1/3">
+              <span class="font-mono text-[10px] text-indigo-500 mb-2 block tracking-widest">
+                FULL-STACK DEVELOPMENT
+              </span>
+
+              <h3 class="text-2xl font-bold mb-4 group-hover:text-indigo-500 transition">
+                Custom Corporate CMS (Nolka)
+              </h3>
+
+              <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest leading-relaxed">
+                Web Developer Intern — PT Bumantara · 2025
+              </p>
+
+              <!-- optional live link -->
+              <a href="https://nolka.id/" class="inline-block mt-4 text-xs font-mono text-indigo-500 hover:underline">
+                View Project →
+              </a>
+            </div>
+
+            <div class="w-full md:w-2/3">
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+                Built a full-featured corporate CMS from scratch covering database design,
+                backend services, and admin panel modules (Portfolio, Product, Career, Blog).
+                Focused on maintainable structure, efficient content workflows, and reliable
+                data handling across the platform.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+                <span class="tag">Laravel</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">REST API</span>
+                <span class="tag">Admin Panel</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ISRSF-->
+        <article class="group transition duration-300 hover:-translate-y-1">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+
+            <div class="w-full md:w-1/3">
+              <span class="font-mono text-[10px] text-emerald-500 mb-2 block tracking-widest">
+                CLIENT WEBSITE
+              </span>
+
+              <h3 class="text-2xl font-bold mb-4 group-hover:text-emerald-500 transition">
+                ISRSF
+              </h3>
+
+              <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest leading-relaxed">
+                Web Developer Intern — PT Bumantara Transformasi Digital · 2025
+              </p>
+
+                <a href="https://isrsf.org/" class="inline-block mt-4 text-xs font-mono text-indigo-500 hover:underline">
+                View Project →
+              </a>
+            </div>
+
+
+
+            <div class="w-full md:w-2/3">
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+                Implemented new features and resolved issues on an existing corporate
+                website to improve stability and performance. Worked closely with the
+                internal team to ensure changes aligned with client requirements while
+                maintaining clean and maintainable code.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+                <span class="text-[10px] font-mono border border-zinc-200 dark:border-zinc-800 px-2 py-1 rounded">Laravel</span>
+                <span class="text-[10px] font-mono border border-zinc-200 dark:border-zinc-800 px-2 py-1 rounded">MySQL</span>
+                <span class="text-[10px] font-mono border border-zinc-200 dark:border-zinc-800 px-2 py-1 rounded">SEO</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- IFAR -->
+        <article class="group transition duration-300 hover:-translate-y-1">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+
+            <div class="w-full md:w-1/3">
+              <span class="font-mono text-[10px] text-emerald-500 mb-2 block tracking-widest">
+                CLIENT WEBSITE
+              </span>
+
+              <h3 class="text-2xl font-bold mb-4 group-hover:text-emerald-500 transition">
+                IFAR Website Maintenance
+              </h3>
+
+              <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest leading-relaxed">
+                Web Developer Intern — PT Bumantara Transformasi Digital · 2025
+              </p>
+
+                <a href="https://ifar.org/" class="inline-block mt-4 text-xs font-mono text-indigo-500 hover:underline">
+                View Project →
+              </a>
+
+            </div>
+
+            <div class="w-full md:w-2/3">
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+                Maintained and enhanced an existing client website by implementing
+                feature updates, fixing bugs, and ensuring consistent performance
+                across deployments. Focused on reliability, code quality, and smooth
+                content management operations.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+                <span class="text-[10px] font-mono border border-zinc-200 dark:border-zinc-800 px-2 py-1 rounded">Laravel</span>
+                <span class="text-[10px] font-mono border border-zinc-200 dark:border-zinc-800 px-2 py-1 rounded">MySQL</span>
+                <span class="text-[10px] font-mono border border-zinc-200 dark:border-zinc-800 px-2 py-1 rounded">Maintenance</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ===================== -->
+        <!-- PROJECT 2 — DIGILAND -->
+        <!-- ===================== -->
+        <article class="group transition duration-300 hover:-translate-y-1">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+
+            <div class="w-full md:w-1/3">
+              <span class="font-mono text-[10px] text-emerald-500 mb-2 block tracking-widest">
+                WEB PLATFORM
+              </span>
+
+              <h3 class="text-2xl font-bold mb-4 group-hover:text-emerald-500 transition">
+                Campaign Microsite (Digiland)
+              </h3>
+
+              <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest leading-relaxed">
+                Web Developer Intern — PT Bumantara · 2025
+              </p>
+            </div>
+
+            <div class="w-full md:w-2/3">
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+                Developed participant and winner management features including advanced CRUD,
+                Excel import/export, and admin dashboard improvements for campaign operations.
+                Ensured stable performance and clean data flow across modules.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+                <span class="tag">Laravel</span>
+                <span class="tag">Excel Import</span>
+                <span class="tag">AJAX</span>
+                <span class="tag">Dashboard UI</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ===================== -->
+        <!-- PROJECT 3 — INTERSKALA (INTERNAL) -->
+        <!-- ===================== -->
+        <article class="group transition duration-300 hover:-translate-y-1">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+
+            <div class="w-full md:w-1/3">
+              <span class="font-mono text-[10px] text-amber-500 mb-2 block tracking-widest">
+                ENTERPRISE INTERNAL PLATFORM
+              </span>
+
+              <h3 class="text-2xl font-bold mb-4 group-hover:text-amber-500 transition">
+                CRM, HRIS & CIS Enhancements
+              </h3>
+
+              <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest leading-relaxed">
+                IT Intern — Interskala Group · 2025–2026
+              </p>
+
+              <span class="inline-block mt-4 text-[10px] font-mono px-2 py-1 border border-zinc-300 dark:border-zinc-700 rounded text-zinc-500">
+                Internal System — Case Study
+              </span>
+            </div>
+
+            <div class="w-full md:w-2/3">
+              <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
+                Contributed to multiple internal platforms across CRM, HRIS, and Clinical
+                Information System to support company-wide digital operations. Delivered
+                modular features including role-based access control, multi-level approval
+                workflows, technician ticketing, and BPJS Mobile JKN integration.
+                Collaborated closely with stakeholders through requirement analysis,
+                UAT cycles, and iterative system improvements.
+              </p>
+
+              <div class="flex flex-wrap gap-3">
+                <span class="tag">RBAC</span>
+                <span class="tag">Workflow Engine</span>
+                <span class="tag">REST API</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Healthcare Integration</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TOOLKIT -->
+    <section id="toolkit" class="mb-32 p-8 md:p-12 bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl">
+
+      <h2 class="text-[10px] font-bold tracking-[0.4em] text-zinc-400 mb-12 uppercase">
+        Toolkit
+      </h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-8 text-sm">
+
+        <div>
+          <h4 class="font-bold mb-4 text-zinc-400 uppercase text-[10px]">Frontend</h4>
+          <p class="font-mono leading-7">
+            React, Next.js, TypeScript, Tailwind CSS
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-4 text-zinc-400 uppercase text-[10px]">Backend</h4>
+          <p class="font-mono leading-7">
+            Laravel, Express.js, REST APIs, RBAC
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-4 text-zinc-400 uppercase text-[10px]">Infrastructure</h4>
+          <p class="font-mono leading-7">
+            Docker, Cloudflare, MySQL, Git Flow
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="text-center pt-24 border-t border-zinc-200 dark:border-zinc-800">
+      <p class="text-zinc-500 text-sm mb-6">
+        Have an interesting engineering challenge? Let’s talk.
+      </p>
+
+      <a href="mailto:ramasatriana12@gmail.com"
+        class="text-4xl md:text-6xl font-serif text-indigo-600 dark:text-indigo-400 hover:opacity-70 transition">
+        Get in touch.
+      </a>
+
+      <div class="mt-16 flex flex-wrap justify-center gap-8 md:gap-12 text-[10px] font-mono text-zinc-400 uppercase tracking-widest">
+        <a href="https://github.com/ramasatri12" class="hover:text-zinc-900 dark:hover:text-white transition">GitHub</a>
+        <a href="https://www.linkedin.com/in/rama-satriana-0bb882231" class="hover:text-zinc-900 dark:hover:text-white transition">LinkedIn</a>
+        <a href="https://medium.com/@ramasatri49" class="hover:text-zinc-900 dark:hover:text-white transition">Blog\Article</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Theme Script -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      html.classList.add('dark');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+  </script>
+</body>
+</html>
